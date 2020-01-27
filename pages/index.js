@@ -158,7 +158,7 @@ class Index extends React.Component {
           </div>
           <div className="column">
             <WYSIWYG topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} hairColor={hairColor} />
-            <div className="login-and-save-button">Login And Save</div>
+            <div className="login-and-save-button">🌈 Login And Save 🦄</div>
           </div>
         </div>
         <style jsx>{`
@@ -199,6 +199,8 @@ class Index extends React.Component {
             flex-wrap: wrap;
             justify-content: flex-start;
             align-items: flex-start;
+            height: inherit;
+            overflow: scroll;
           }
           .option {
             width: 80px;
@@ -243,6 +245,12 @@ class Index extends React.Component {
             color: #333;
             font-family: 'Nunito', sans-serif;
           }
+          .tabs-menu {
+            height: 550px;
+          }
+          .react-tabs {
+            height: inherit;
+          }
           .react-tabs__tab-list {
             border-bottom: none;
           }
@@ -257,6 +265,9 @@ class Index extends React.Component {
             padding-right: 10px;
             padding-left: 10px;
             color: #bdbdbd;
+          }
+          .react-tabs__tab-panel--selected {
+            height: 400px;
           }
         `}</style>
       </div>

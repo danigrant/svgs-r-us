@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import WYSIWYG from '../components/WYSIWYG'
 import { hairColorOptions, clotheTypeOptions, clotheColorOptions, eyebrowTypeOptions, eyeTypeOptions, facialHairTypeOptions, mouthTypeOptions, skinColorOptions, accessoriesTypeOptions, topTypeOptions } from '../utils/options'
 import Overlay from '../components/Overlay'
+import axios from 'axios';
 
 class Index extends React.Component {
   state = {
@@ -33,6 +34,14 @@ class Index extends React.Component {
     this.setState({ overlayShow: !this.state.overlayShow })
   }
 
+  fast = () => {
+    // this does not work i do not understand why
+    axios.get(`https://api.fast.co/api/invite?identifier=ddanigrant%40gmail.com&key=qlGznwRgNBrWjpArDVm9xYO3D4eLPX72`)
+      .then(res => {
+        console.log(res.data)
+      })
+  }
+
   render() {
     const { topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor, hairColor } = this.state
 
@@ -41,8 +50,9 @@ class Index extends React.Component {
         <Head>
           <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="https://unpkg.com/react-tabs/style/react-tabs.css" />
+          <script src="https://js.fast.co/button.js?key=qlGznwRgNBrWjpArDVm9xYO3D4eLPX72"></script>
         </Head>
-        { this.state.overlayShow && <Overlay handleToggleOverlay={this.handleToggleOverlay} /> }
+        {/*{ this.state.overlayShow && <Overlay handleToggleOverlay={this.handleToggleOverlay} /> }*/}
         <div className="app-container">
           <div className="column">
             <h1>Build Yo Self</h1>
@@ -165,7 +175,7 @@ class Index extends React.Component {
           </div>
           <div className="column">
             <WYSIWYG topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} hairColor={hairColor} />
-            <div className="login-and-save-button" onClick={this.handleToggleOverlay}>🌈 Login And Save 🦄</div>
+            <div className="login-and-save-button" onClick={this.fast}>🌈 Login And Save 🦄</div>
           </div>
         </div>
         <div className="gratitude">Built with <a href="http://avataaars.com/" target="_blank">avataaars</a> designed by <a href="https://twitter.com/pablostanley" target="_blank">Pablo Stanley</a></div>

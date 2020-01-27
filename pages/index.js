@@ -158,13 +158,14 @@ class Index extends React.Component {
           </div>
           <div className="column">
             <WYSIWYG topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} hairColor={hairColor} />
+            <div className="login-and-save-button">Login And Save</div>
           </div>
         </div>
         <style jsx>{`
           .app-container {
             background-color: #fff;
-            width: 800pt;
-            max-width: 95%;
+            max-width: 800pt;
+            width: 95%;
             height: 500pt;
             border-radius: 10px;
             box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
@@ -185,6 +186,9 @@ class Index extends React.Component {
           .column:last-child {
             background: #1C2541;
             border-radius: 0px 10px 10px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
           }
           .column h1 {
             margin-bottom: 0.2em;
@@ -204,6 +208,27 @@ class Index extends React.Component {
             margin-right: 20px;
             margin-left: 0px;
             cursor: pointer;
+          }
+          .login-and-save-button {
+            box-sizing: border-box;
+            padding: 10px;
+            font-weight: bold;
+            background-color: #3f51b5;
+            color: white;
+            text-align: center;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          .login-and-save-button:hover {
+            border-bottom: 2px solid #283894;
+            filter: brightness(98%);
+          }
+          .login-and-save-button:active {
+            border-bottom: 2px solid #121c52;
+            filter: brightness(96%);
           }
         `}</style>
         <style jsx global>{`

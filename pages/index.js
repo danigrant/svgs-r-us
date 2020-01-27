@@ -76,16 +76,16 @@ class Index extends React.Component {
                   {/* Eyebrows */}
                   {eyebrowTypeOptions.map((option) => (
                     <div className="option" key={option.name} onClick={() => this.handleChange('eyebrowType', option.name)}>
-                      <img style={{ width: 80, background: "#e0c8ff", borderRadius: 100 }} src={option.file} />
+                      <img style={{ width: 80, background: "#d08b5b", padding: 5 }} src={option.file} />
                     </div>
                   ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-                  {/* Skin */}
-                  {clotheTypeOptions.map((option) => (
-                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                  {/* Mouth */}
+                  {mouthTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('mouthType', option.name)}>
                       <img style={{ width: 80 }} src={option.file} />
                     </div>
                   ))}
@@ -93,9 +93,9 @@ class Index extends React.Component {
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-                  {/* Skin */}
-                  {clotheTypeOptions.map((option) => (
-                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                  {/* topType aka Hair */}
+                  {topTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('topType', option.name)}>
                       <img style={{ width: 80 }} src={option.file} />
                     </div>
                   ))}
@@ -191,6 +191,7 @@ class Index extends React.Component {
             margin: 10px;
             margin-right: 20px;
             margin-left: 0px;
+            cursor: pointer;
           }
         `}</style>
         <style jsx global>{`

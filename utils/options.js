@@ -157,10 +157,6 @@ const eyebrowTypeOptions = [
     "file": "/Avataaar/Eyebrow/Natural/Flat Natural.svg"
   },
   {
-    "name": "FrownNatural",
-    "file": "/Avataaar/Eyebrow/Natural/Frown Natural.svg"
-  },
-  {
     "name": "RaisedExcitedNatural",
     "file": "/Avataaar/Eyebrow/Natural/Raised Excited Natural.svg"
   },
@@ -450,87 +446,83 @@ const topTypeOptions = [
   },
   {
     "name": "Turban",
-    "file": "/Avataaar/Accessories/Turban.svg"
+    "file": "/Avataaar/Top/Accesories/Turban.svg"
   },
   {
     "name": "Hijab",
-    "file": "/Avataaar/Accessories/Hijab.svg"
+    "file": "/Avataaar/Top/Accesories/Hijab.svg"
   },
   {
     "name": "Hat",
-    "file": "/Avataaar/Accessories/Hat.svg"
+    "file": "/Avataaar/Top/Accesories/Hat.svg"
   },
   {
     "name": "WinterHat1",
-    "file": "/Avataaar/Accessories/Winter Hat 1.svg"
+    "file": "/Avataaar/Top/Accesories/Winter Hat 1.svg"
   },
   {
     "name": "WinterHat2",
-    "file": "/Avataaar/Accessories/Winter Hat 2.svg"
+    "file": "/Avataaar/Top/Accesories/Winter Hat 2.svg"
   },
   {
     "name": "WinterHat3",
-    "file": "/Avataaar/Accessories/Winter Hat 3.svg"
+    "file": "/Avataaar/Top/Accesories/Winter Hat 3.svg"
   },
   {
     "name": "WinterHat4",
-    "file": "/Avataaar/Accessories/Winter Hat 4.svg"
+    "file": "/Avataaar/Top/Accesories/Winter Hat 4.svg"
   },
   {
     "name": "Eyepatch",
-    "file": "/Avataaar/Accessories/Eyepatch.svg"
+    "file": "/Avataaar/Top/Accesories/Eyepatch.svg"
   },
   {
     "name": "ShortHairDreads01",
-    "file": "/Avataaar/Top/Long Hair/Dreads 01.svg"
+    "file": "/Avataaar/Top/Short Hair/Dreads 01.svg"
   },
   {
     "name": "ShortHairDreads02",
-    "file": "/Avataaar/Top/Long Hair/Dreads 02.svg"
+    "file": "/Avataaar/Top/Short Hair/Dreads 02.svg"
   },
   {
     "name": "ShortHairFrizzle",
-    "file": "/Avataaar/Top/Long Hair/Frizzle.svg"
+    "file": "/Avataaar/Top/Short Hair/Frizzle.svg"
   },
   {
     "name": "ShortHairShaggyMullet",
-    "file": "/Avataaar/Top/Long Hair/Shaggy Mullet.svg"
+    "file": "/Avataaar/Top/Short Hair/Shaggy Mullet.svg"
   },
   {
     "name": "ShortHairShaggy",
-    "file": "/Avataaar/Top/Long Hair/Shaggy.svg"
+    "file": "/Avataaar/Top/Short Hair/Shaggy.svg"
   },
   {
     "name": "ShortHairShortCurly",
-    "file": "/Avataaar/Top/Long Hair/ShortCurly.svg"
+    "file": "/Avataaar/Top/Short Hair/Short Curly.svg"
   },
   {
     "name": "ShortHairShortFlat",
-    "file": "/Avataaar/Top/Long Hair/ShortFlat.svg"
+    "file": "/Avataaar/Top/Short Hair/Short Flat.svg"
   },
   {
     "name": "ShortHairShortRound",
-    "file": "/Avataaar/Top/Long Hair/Short Round.svg"
+    "file": "/Avataaar/Top/Short Hair/Short Round.svg"
   },
   {
     "name": "ShortHairShortWaved",
-    "file": "/Avataaar/Top/Long Hair/Short Waved.svg"
+    "file": "/Avataaar/Top/Short Hair/Short Waved.svg"
   },
   {
     "name": "ShortHairSides",
-    "file": "/Avataaar/Top/Long Hair/Sides.svg"
+    "file": "/Avataaar/Top/Short Hair/Sides.svg"
   },
   {
     "name": "ShortHairTheCaesarSidePart",
-    "file": "/Avataaar/Top/Long Hair/The Caesar + Side Part.svg"
+    "file": "/Avataaar/Top/Short Hair/The Caesar + Side Part.svg"
   },
   {
     "name": "ShortHairTheCaesar",
-    "file": "/Avataaar/Top/Long Hair/The Caesar.svg"
-  },
-  {
-    "name": "NoHair",
-    "file": "/Avataaar/Top/Long Hair/-No Hair.svg"
+    "file": "/Avataaar/Top/Short Hair/The Caesar.svg"
   }
 ]
 

@@ -15,7 +15,8 @@ class Index extends React.Component {
     eyeType: 'WinkWacky',
     eyebrowType: 'RaisedExcited',
     mouthType: 'Tongue',
-    skinColor: 'Tanned'
+    skinColor: 'Tanned',
+    overlayShow: false
   }
 
   static async getInitialProps() {
@@ -28,6 +29,10 @@ class Index extends React.Component {
     this.setState({ [part]: color })
   }
 
+  handleToggleOverlay = () => {
+    this.setState({ overlayShow: !this.state.overlayShow })
+  }
+
   render() {
     const { topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor, hairColor } = this.state
 
@@ -37,7 +42,7 @@ class Index extends React.Component {
           <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="https://unpkg.com/react-tabs/style/react-tabs.css" />
         </Head>
-        <Overlay />
+        { this.state.overlayShow && <Overlay handleToggleOverlay={this.handleToggleOverlay} /> }
         <div className="app-container">
           <div className="column">
             <h1>Build Yo Self</h1>
@@ -160,9 +165,10 @@ class Index extends React.Component {
           </div>
           <div className="column">
             <WYSIWYG topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} hairColor={hairColor} />
-            <div className="login-and-save-button">🌈 Login And Save 🦄</div>
+            <div className="login-and-save-button" onClick={this.handleToggleOverlay}>🌈 Login And Save 🦄</div>
           </div>
         </div>
+        <div className="gratitude">Built with <a href="http://avataaars.com/" target="_blank">avataaars</a> designed by <a href="https://twitter.com/pablostanley" target="_blank">Pablo Stanley</a></div>
         <style jsx>{`
           .app-container {
             background-color: #fff;
@@ -234,6 +240,20 @@ class Index extends React.Component {
             border-bottom: 2px solid #121c52;
             filter: brightness(96%);
           }
+          .gratitude a {
+            color: #ff9800;
+            font-weight: bold;
+          }
+          .gratitude {
+            margin-top: 30px;
+            color: #ffc107;
+            font-size: 0.8em;
+            text-transform: lowercase;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 5px;
+          }
         `}</style>
         <style jsx global>{`
           body, html {
@@ -269,7 +289,10 @@ class Index extends React.Component {
             color: #bdbdbd;
           }
           .react-tabs__tab-panel--selected {
-            height: 400px;
+            max-height: 400px;
+          }
+          a {
+            text-decoration: none;
           }
         `}</style>
       </div>

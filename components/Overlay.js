@@ -1,8 +1,8 @@
 import Modal from './Modal'
 
-export default () => (
+export default ({ handleToggleOverlay }) => (
   <div className="overlay-wrapper">
-    <Modal />
+    <Modal handleToggleOverlay={handleToggleOverlay} />
     <style jsx>{`
       .overlay-wrapper {
         width: 100%;

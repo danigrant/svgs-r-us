@@ -1,7 +1,8 @@
-export default () => (
+export default ({ handleToggleOverlay }) => (
   <div className="modal-wrapper">
-    <div className="close"><img src="/icons/close.svg" /></div>
-    <h1>yo i am a modal</h1>
+    <div className="close" onClick={handleToggleOverlay}><img src="/icons/close.svg" /></div>
+    <h1>Save Your Avatar</h1>
+    <p>Your avatar looks spectacular, it's time to save it so that you can use it across the internet.</p>
     <style jsx>{`
       .modal-wrapper {
         background-color: #fff;
@@ -24,6 +25,8 @@ export default () => (
         top: 0;
         bottom: 0;
         z-index: 2;
+        box-sizing: border-box;
+        padding: 30px;
       }
       .close {
         position: absolute;

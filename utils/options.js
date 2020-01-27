@@ -244,7 +244,7 @@ const eyeTypeOptions = [
 const facialHairTypeOptions = [
   {
     "name": "Blank",
-    "file": "/Avataaar/Facial Hair/-Blank.svg"
+    "file": "/Avataaar/Top/Accesories/Blank.svg"
   },
   {
     "name": "BeardLight",
@@ -353,37 +353,41 @@ const skinColorOptions = [
 const accessoriesTypeOptions = [
   {
     "name": "Blank",
-    "file": "/Avataaar/Accessories/Blank.svg"
+    "file": "/Avataaar/Top/Accesories/Blank.svg"
   },
   {
     "name": "Kurt",
-    "file": "/Avataaar/Accessories/Kurt.svg"
+    "file": "/Avataaar/Top/Accesories/Kurt.svg"
   },
   {
     "name": "Prescription01",
-    "file": "/Avataaar/Accessories/Prescription 01.svg"
+    "file": "/Avataaar/Top/Accesories/Prescription 01.svg"
   },
   {
     "name": "Prescription02",
-    "file": "/Avataaar/Accessories/Prescription 02.svg"
+    "file": "/Avataaar/Top/Accesories/Prescription 02.svg"
   },
   {
     "name": "Round",
-    "file": "/Avataaar/Accessories/Round.svg"
+    "file": "/Avataaar/Top/Accesories/Round.svg"
   },
   {
     "name": "Sunglasses",
-    "file": "/Avataaar/Accessories/Sunglasses.svg"
+    "file": "/Avataaar/Top/Accesories/Sunglasses.svg"
   },
 
   {
     "name": "Wayfarers",
-    "file": "/Avataaar/Accessories/Wayfarers.svg"
+    "file": "/Avataaar/Top/Accesories/Wayfarers.svg"
   }
 ]
 
 // aka hairstyle
 const topTypeOptions = [
+  {
+    "name": "Blank",
+    "file": "/Avataaar/Top/Accesories/Blank.svg"
+  },
   {
     "name": "LongHairBigHair",
     "file": "/Avataaar/Top/Long Hair/Big Hair.svg"
@@ -433,7 +437,7 @@ const topTypeOptions = [
     "file": "/Avataaar/Top/Long Hair/Shaved Sides.svg"
   },
   {
-    "name": "LongHairStraight1",
+    "name": "LongHairStraight",
     "file": "/Avataaar/Top/Long Hair/Straight-1.svg"
   },
   {
@@ -491,10 +495,6 @@ const topTypeOptions = [
   {
     "name": "ShortHairShaggyMullet",
     "file": "/Avataaar/Top/Short Hair/Shaggy Mullet.svg"
-  },
-  {
-    "name": "ShortHairShaggy",
-    "file": "/Avataaar/Top/Short Hair/Shaggy.svg"
   },
   {
     "name": "ShortHairShortCurly",

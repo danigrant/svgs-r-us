@@ -10,7 +10,7 @@ class Index extends React.Component {
     accessoriesType: 'Blank',
     facialHairType: 'Blank',
     clotheType: 'Overall',
-    clotheColor: 'Red',
+    clotheColor: 'Gray01',
     eyeType: 'WinkWacky',
     eyebrowType: 'RaisedExcited',
     mouthType: 'Tongue',
@@ -23,11 +23,12 @@ class Index extends React.Component {
   }
 
   handleChange = (part, color) => {
+    console.log(part, color);
     this.setState({ [part]: color })
   }
 
   render() {
-    const { avatarStyle, topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor } = this.state
+    const { topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor, hairColor } = this.state
 
     return (
       <div className="page-wrapper">
@@ -48,6 +49,7 @@ class Index extends React.Component {
                   <Tab>✂️ Hair</Tab>
                   <Tab>💈 Hair Color</Tab>
                   <Tab>👔 Clothes</Tab>
+                  <Tab>👗 Clothes Color</Tab>
                   <Tab>👓 Accessories</Tab>
                   <Tab>🦁 Facial Hair</Tab>
                 </TabList>
@@ -103,7 +105,17 @@ class Index extends React.Component {
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-                  {/* Skin */}
+                  {/* Hair Color */}
+                  {hairColorOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('hairColor', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+                  {/* Clothes */}
                   {clotheTypeOptions.map((option) => (
                     <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
                       <img style={{ width: 80 }} src={option.file} />
@@ -113,9 +125,9 @@ class Index extends React.Component {
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-                  {/* Skin */}
-                  {clotheTypeOptions.map((option) => (
-                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                  {/* Clothes Color */}
+                  {clotheColorOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheColor', option.name)}>
                       <img style={{ width: 80 }} src={option.file} />
                     </div>
                   ))}
@@ -123,20 +135,20 @@ class Index extends React.Component {
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-                  {/* Skin */}
-                  {clotheTypeOptions.map((option) => (
-                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
-                      <img style={{ width: 80 }} src={option.file} />
+                  {/* Accessories */}
+                  {accessoriesTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('accessoriesType', option.name)}>
+                      <img style={{ width: 80, height: 40 }} src={option.file} />
                     </div>
                   ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-                  {/* Skin */}
-                  {clotheTypeOptions.map((option) => (
-                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
-                      <img style={{ width: 80 }} src={option.file} />
+                  {/* Facial Hair */}
+                  {facialHairTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('facialHairType', option.name)}>
+                      <img style={{ width: 65 }} src={option.file} />
                     </div>
                   ))}
                   </div>
@@ -145,7 +157,7 @@ class Index extends React.Component {
             </div>
           </div>
           <div className="column">
-            <WYSIWYG avatarStyle={avatarStyle} topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} />
+            <WYSIWYG topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} hairColor={hairColor} />
           </div>
         </div>
         <style jsx>{`

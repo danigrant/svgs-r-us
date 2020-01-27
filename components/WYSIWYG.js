@@ -1,10 +1,11 @@
 import Avatar from 'avataaars'
 
- export default ({ avatarStyle, topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor }) => (
+ export default ({ topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor, hairColor }) => (
    <div className="wrapper">
        <Avatar
-         avatarStyle={avatarStyle}
+         avatarStyle='Circle'
          topType={topType}
+         hairColor={hairColor}
          accessoriesType={accessoriesType}
          facialHairType={facialHairType}
          clotheType={clotheType}

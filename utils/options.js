@@ -1,5 +1,4 @@
-// aka hair style
-const topTypeOptions = [
+const hairColorOptions = [
   {
     "name": "Auburn",
     "file": "/Avataaar/Color/Hair/Auburn.svg"
@@ -170,10 +169,6 @@ const eyebrowTypeOptions = [
     "file": "/Avataaar/Eyebrow/Natural/Sad Concerned Natural.svg"
   },
   {
-    "name": "UnibrowNatural",
-    "file": "/Avataaar/Eyebrow/Natural/Unibrow Natural.svg"
-  },
-  {
     "name": "UpDownNatural",
     "file": "/Avataaar/Eyebrow/Natural/Up Down Natural.svg"
   },
@@ -201,7 +196,7 @@ const eyebrowTypeOptions = [
 
 const eyeTypeOptions = [
   {
-    "name": "Closed",
+    "name": "Close",
     "file": "/Avataaar/Eyes/Closed.svg"
   },
   {
@@ -213,7 +208,7 @@ const eyeTypeOptions = [
     "file": "/Avataaar/Eyes/Default.svg"
   },
   {
-    "name": "Eye Roll",
+    "name": "EyeRoll",
     "file": "/Avataaar/Eyes/Eye Roll.svg"
   },
   {
@@ -250,7 +245,7 @@ const eyeTypeOptions = [
   }
 ]
 
-const FacialHair = [
+const facialHairTypeOptions = [
   {
     "name": "Blank",
     "file": "/Avataaar/Facial Hair/-Blank.svg"
@@ -276,3 +271,278 @@ const FacialHair = [
     "file": "/Avataaar/Facial Hair/Moustache Magnum.svg"
   }
 ]
+
+const mouthTypeOptions = [
+  {
+    "name": "Concerned",
+    "file": "/Avataaar/Mouth/Concerned.svg"
+  },
+  {
+    "name": "Default",
+    "file": "/Avataaar/Mouth/Default.svg"
+  },
+  {
+    "name": "Disbelief",
+    "file": "/Avataaar/Mouth/Disbelief.svg"
+  },
+  {
+    "name": "Eating",
+    "file": "/Avataaar/Mouth/Eating.svg"
+  },
+  {
+    "name": "Grimace",
+    "file": "/Avataaar/Mouth/Grimace.svg"
+  },
+  {
+    "name": "Sad",
+    "file": "/Avataaar/Mouth/Sad.svg"
+  },
+  {
+    "name": "ScreamOpen",
+    "file": "/Avataaar/Mouth/Scream Open.svg"
+  },
+  {
+    "name": "Serious",
+    "file": "/Avataaar/Mouth/Serious.svg"
+  },
+  {
+    "name": "Smile",
+    "file": "/Avataaar/Mouth/Smile.svg"
+  },
+  {
+    "name": "Tongue",
+    "file": "/Avataaar/Mouth/Tongue.svg"
+  },
+  {
+    "name": "Twinkle",
+    "file": "/Avataaar/Mouth/Twinkle.svg"
+  },
+  {
+    "name": "Vomit",
+    "file": "/Avataaar/Mouth/Vomit.svg"
+  }
+]
+
+const skinColorOptions = [
+  {
+    "name": "Tanned",
+    "file": "/Avataaar/Skin/Tanned.svg"
+  },
+  {
+    "name": "Yellow",
+    "file": "/Avataaar/Skin/Yellow.svg"
+  },
+  {
+    "name": "Black",
+    "file": "/Avataaar/Skin/Black.svg"
+  },
+  {
+    "name": "DarkBrown",
+    "file": "/Avataaar/Skin/Dark Brown.svg"
+  },
+  {
+    "name": "Brown",
+    "file": "/Avataaar/Skin/Brown.svg"
+  },
+  {
+    "name": "Light",
+    "file": "/Avataaar/Skin/Light.svg"
+  },
+  {
+    "name": "Pale",
+    "file": "/Avataaar/Skin/Pale.svg"
+  }
+]
+
+const accessoriesTypeOptions = [
+  {
+    "name": "Blank",
+    "file": "/Avataaar/Accessories/Blank.svg"
+  },
+  {
+    "name": "Kurt",
+    "file": "/Avataaar/Accessories/Kurt.svg"
+  },
+  {
+    "name": "Prescription01",
+    "file": "/Avataaar/Accessories/Prescription 01.svg"
+  },
+  {
+    "name": "Prescription02",
+    "file": "/Avataaar/Accessories/Prescription 02.svg"
+  },
+  {
+    "name": "Round",
+    "file": "/Avataaar/Accessories/Round.svg"
+  },
+  {
+    "name": "Sunglasses",
+    "file": "/Avataaar/Accessories/Sunglasses.svg"
+  },
+
+  {
+    "name": "Wayfarers",
+    "file": "/Avataaar/Accessories/Wayfarers.svg"
+  }
+]
+
+// aka hairstyle
+const topTypeOptions = [
+  {
+    "name": "LongHairBigHair",
+    "file": "/Avataaar/Top/Long Hair/Big Hair.svg"
+  },
+  {
+    "name": "LongHairBob",
+    "file": "/Avataaar/Top/Long Hair/Bob.svg"
+  },
+  {
+    "name": "LongHairBun",
+    "file": "/Avataaar/Top/Long Hair/Bun.svg"
+  },
+  {
+    "name": "LongHairCurly",
+    "file": "/Avataaar/Top/Long Hair/Curly.svg"
+  },
+  {
+    "name": "LongHairCurvy",
+    "file": "/Avataaar/Top/Long Hair/Curvy.svg"
+  },
+  {
+    "name": "LongHairDreads",
+    "file": "/Avataaar/Top/Long Hair/Dreads.svg"
+  },
+  {
+    "name": "LongHairFrida",
+    "file": "/Avataaar/Top/Long Hair/Frida.svg"
+  },
+  {
+    "name": "LongHairFroBand",
+    "file": "/Avataaar/Top/Long Hair/Fro + Band.svg"
+  },
+  {
+    "name": "LongHairFro",
+    "file": "/Avataaar/Top/Long Hair/Fro.svg"
+  },
+  {
+    "name": "LongHairNotTooLong",
+    "file": "/Avataaar/Top/Long Hair/Long but not too long.svg"
+  },
+  {
+    "name": "LongHairMiaWallace",
+    "file": "/Avataaar/Top/Long Hair/Mia Wallace.svg"
+  },
+  {
+    "name": "LongHairShavedSides",
+    "file": "/Avataaar/Top/Long Hair/Shaved Sides.svg"
+  },
+  {
+    "name": "LongHairStraight1",
+    "file": "/Avataaar/Top/Long Hair/Straight-1.svg"
+  },
+  {
+    "name": "LongHairStraightStrand",
+    "file": "/Avataaar/Top/Long Hair/Straight + Strand.svg"
+  },
+  {
+    "name": "LongHairStraight2",
+    "file": "/Avataaar/Top/Long Hair/Straight.svg"
+  },
+  {
+    "name": "Turban",
+    "file": "/Avataaar/Accessories/Turban.svg"
+  },
+  {
+    "name": "Hijab",
+    "file": "/Avataaar/Accessories/Hijab.svg"
+  },
+  {
+    "name": "Hat",
+    "file": "/Avataaar/Accessories/Hat.svg"
+  },
+  {
+    "name": "WinterHat1",
+    "file": "/Avataaar/Accessories/Winter Hat 1.svg"
+  },
+  {
+    "name": "WinterHat2",
+    "file": "/Avataaar/Accessories/Winter Hat 2.svg"
+  },
+  {
+    "name": "WinterHat3",
+    "file": "/Avataaar/Accessories/Winter Hat 3.svg"
+  },
+  {
+    "name": "WinterHat4",
+    "file": "/Avataaar/Accessories/Winter Hat 4.svg"
+  },
+  {
+    "name": "Eyepatch",
+    "file": "/Avataaar/Accessories/Eyepatch.svg"
+  },
+  {
+    "name": "ShortHairDreads01",
+    "file": "/Avataaar/Top/Long Hair/Dreads 01.svg"
+  },
+  {
+    "name": "ShortHairDreads02",
+    "file": "/Avataaar/Top/Long Hair/Dreads 02.svg"
+  },
+  {
+    "name": "ShortHairFrizzle",
+    "file": "/Avataaar/Top/Long Hair/Frizzle.svg"
+  },
+  {
+    "name": "ShortHairShaggyMullet",
+    "file": "/Avataaar/Top/Long Hair/Shaggy Mullet.svg"
+  },
+  {
+    "name": "ShortHairShaggy",
+    "file": "/Avataaar/Top/Long Hair/Shaggy.svg"
+  },
+  {
+    "name": "ShortHairShortCurly",
+    "file": "/Avataaar/Top/Long Hair/ShortCurly.svg"
+  },
+  {
+    "name": "ShortHairShortFlat",
+    "file": "/Avataaar/Top/Long Hair/ShortFlat.svg"
+  },
+  {
+    "name": "ShortHairShortRound",
+    "file": "/Avataaar/Top/Long Hair/Short Round.svg"
+  },
+  {
+    "name": "ShortHairShortWaved",
+    "file": "/Avataaar/Top/Long Hair/Short Waved.svg"
+  },
+  {
+    "name": "ShortHairSides",
+    "file": "/Avataaar/Top/Long Hair/Sides.svg"
+  },
+  {
+    "name": "ShortHairTheCaesarSidePart",
+    "file": "/Avataaar/Top/Long Hair/The Caesar + Side Part.svg"
+  },
+  {
+    "name": "ShortHairTheCaesar",
+    "file": "/Avataaar/Top/Long Hair/The Caesar.svg"
+  },
+  {
+    "name": "NoHair",
+    "file": "/Avataaar/Top/Long Hair/-No Hair.svg"
+  }
+]
+
+module.exports = {
+  hairColorOptions,
+  clotheTypeOptions,
+  clotheColorOptions,
+  eyebrowTypeOptions,
+  eyeTypeOptions,
+  facialHairTypeOptions,
+  mouthTypeOptions,
+  skinColorOptions,
+  accessoriesTypeOptions,
+  topTypeOptions
+}

@@ -1,15 +1,17 @@
 import Head from 'next/head'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import WYSIWYG from '../components/WYSIWYG'
+import { hairColorOptions, clotheTypeOptions, clotheColorOptions, eyebrowTypeOptions, eyeTypeOptions, facialHairTypeOptions, mouthTypeOptions, skinColorOptions, accessoriesTypeOptions, topTypeOptions } from '../utils/options'
 
 class Index extends React.Component {
   state = {
     topType: 'LongHairFrida',
-    accessoriesType: 'Kurt',
+    hairColor: 'Black',
+    accessoriesType: 'Blank',
     facialHairType: 'Blank',
     clotheType: 'Overall',
     clotheColor: 'Red',
-    eyeType: 'Default',
+    eyeType: 'WinkWacky',
     eyebrowType: 'RaisedExcited',
     mouthType: 'Tongue',
     skinColor: 'Tanned'
@@ -51,8 +53,9 @@ class Index extends React.Component {
                 </TabList>
                 <TabPanel>
                   <div className="options-wrapper">
-                    {clotheTypeOptions.map((option) => (
-                      <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                    {/* Skin */}
+                    {skinColorOptions.map((option) => (
+                      <div className="option" key={option.name} onClick={() => this.handleChange('skinColor', option.name)}>
                         <img style={{ width: 80 }} src={option.file} />
                       </div>
                     ))}
@@ -60,42 +63,82 @@ class Index extends React.Component {
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Eyes */}
+                  {eyeTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('eyeType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Eyebrows */}
+                  {eyebrowTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('eyebrowType', option.name)}>
+                      <img style={{ width: 80, background: "#e0c8ff", borderRadius: 100 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Skin */}
+                  {clotheTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Skin */}
+                  {clotheTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Skin */}
+                  {clotheTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Skin */}
+                  {clotheTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Skin */}
+                  {clotheTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
                   <div className="options-wrapper">
-
+                  {/* Skin */}
+                  {clotheTypeOptions.map((option) => (
+                    <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                      <img style={{ width: 80 }} src={option.file} />
+                    </div>
+                  ))}
                   </div>
                 </TabPanel>
               </Tabs>

@@ -12,7 +12,7 @@ class Modal extends React.Component {
     event.preventDefault();
     const { email } = this.state
     let { data } = await axios.get(`https://api.fast.co/api/invite?identifier=${encodeURIComponent(email)}&key=qlGznwRgNBrWjpArDVm9xYO3D4eLPX72`)
-    console.log(data);
+    this.setState({ email: '' });
   }
 
   render() {
@@ -37,7 +37,7 @@ class Modal extends React.Component {
         <h1>Save Your Avatar</h1>
         <p>Your avatar looks spectacular, it's time to save it so that you can use it across the internet.</p>
         <form onSubmit={this.handleSubmit}>
-          <input onChange={this.handleChange} type="email" placeholder="you da best at gmail dot com" />
+          <input onChange={this.handleChange} value={this.state.email} type="email" placeholder="you da best at gmail dot com" />
           <button type="submit">→</button>
         </form>
         <style jsx>{`

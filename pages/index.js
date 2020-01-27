@@ -1,42 +1,31 @@
 import Head from 'next/head'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import SVGEditor from '../components/SVGEditor'
+import WYSIWYG from '../components/WYSIWYG'
 
 class Index extends React.Component {
-  state = { faceColor: '#B7C7FF', hairColor: '#E730BE', eyeColor: '#453B85' }
-
-  faceColorOptions = [
-    "#851de0",
-    "#aa26da",
-    "#c355f5",
-    "#f1fa3c"
-  ]
-
-  eyeColorOptions = [
-    "#defcf9",
-    "#cadefc",
-    "#c3bef0",
-    "#cca8e9"
-  ]
-
-  hairColorOptions = [
-    "#ffcc00",
-    "#ff6666",
-    "#cc0066",
-    "#66cccc"
-  ]
+  state = {
+    topType: 'LongHairFrida',
+    accessoriesType: 'Kurt',
+    facialHairType: 'Blank',
+    clotheType: 'Overall',
+    clotheColor: 'Red',
+    eyeType: 'Default',
+    eyebrowType: 'RaisedExcited',
+    mouthType: 'Tongue',
+    skinColor: 'Tanned'
+  }
 
   static async getInitialProps() {
 
     return { posts: "data" }
   }
 
-  handleColorChange = (part, color) => {
+  handleChange = (part, color) => {
     this.setState({ [part]: color })
   }
 
   render() {
-    const { faceColor, hairColor, eyeColor } = this.state
+    const { avatarStyle, topType, accessoriesType, facialHairType, clotheType, clotheColor, eyeType, eyebrowType, mouthType, skinColor } = this.state
 
     return (
       <div className="page-wrapper">
@@ -50,37 +39,78 @@ class Index extends React.Component {
             <div className="tabs-menu">
               <Tabs>
                 <TabList>
-                  <Tab>Face Color</Tab>
-                  <Tab>Eye Color</Tab>
-                  <Tab>Hair Color</Tab>
+                  <Tab>🎨 Skin</Tab>
+                  <Tab>👁 Eyes</Tab>
+                  <Tab>✏️ Eyebrow</Tab>
+                  <Tab>👄 Mouth</Tab>
+                  <Tab>✂️ Hair</Tab>
+                  <Tab>💈 Hair Color</Tab>
+                  <Tab>👔 Clothes</Tab>
+                  <Tab>👓 Accessories</Tab>
+                  <Tab>🦁 Facial Hair</Tab>
                 </TabList>
                 <TabPanel>
-                  <p>lots of face colors</p>
                   <div className="options-wrapper">
-                    {this.faceColorOptions.map((option) => (
-                      <div className="option" style={{ background: option }} key={option} onClick={() => this.handleColorChange('faceColor', option)}>
+                    {clotheTypeOptions.map((option) => (
+                      <div className="option" key={option.name} onClick={() => this.handleChange('clotheType', option.name)}>
+                        <img style={{ width: 80 }} src={option.file} />
                       </div>
                     ))}
                   </div>
                 </TabPanel>
                 <TabPanel>
-                  <p>lots of eye colors</p>
+                  <div className="options-wrapper">
+
+                  </div>
                 </TabPanel>
                 <TabPanel>
-                  <p>lots of hair colors</p>
+                  <div className="options-wrapper">
+
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+
+                  </div>
+                </TabPanel>
+                <TabPanel>
+                  <div className="options-wrapper">
+
+                  </div>
                 </TabPanel>
               </Tabs>
             </div>
           </div>
           <div className="column">
-            <SVGEditor faceColor={faceColor} eyeColor={eyeColor} hairColor={hairColor} />
+            <WYSIWYG avatarStyle={avatarStyle} topType={topType} accessoriesType={accessoriesType} facialHairType={facialHairType} clotheType={clotheType} clotheColor={clotheColor} eyeType={eyeType} eyebrowType={eyebrowType} mouthType={mouthType} skinColor={skinColor} />
           </div>
         </div>
         <style jsx>{`
           .app-container {
             background-color: #fff;
-            width: 500pt;
-            height: 400pt;
+            width: 800pt;
+            max-width: 95%;
+            height: 500pt;
             border-radius: 10px;
             box-shadow: 0px 0px 40px rgba(0,0,0,0.1);
             display: flex;
@@ -103,6 +133,21 @@ class Index extends React.Component {
           }
           .column h1 {
             margin-bottom: 0.2em;
+          }
+          .options-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+          .option {
+            width: 80px;
+            height: 80px;
+            border-radius: 25px;
+            margin: 10px;
+            margin-right: 20px;
+            margin-left: 0px;
           }
         `}</style>
         <style jsx global>{`
@@ -131,25 +176,6 @@ class Index extends React.Component {
             padding-right: 10px;
             padding-left: 10px;
             color: #bdbdbd;
-          }
-          .react-tabs__tab:first-child {
-            padding-left: 0;
-          }
-          .options-wrapper {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-          }
-          .option {
-            width: 25px;
-            height: 25px;
-            border-radius: 25px;
-            margin: 10px;
-            margin-right: 20px;
-            margin-left: 0px;
-            background: green;
           }
         `}</style>
       </div>

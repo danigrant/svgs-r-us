@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import WYSIWYG from '../components/WYSIWYG'
 import { hairColorOptions, clotheTypeOptions, clotheColorOptions, eyebrowTypeOptions, eyeTypeOptions, facialHairTypeOptions, mouthTypeOptions, skinColorOptions, accessoriesTypeOptions, topTypeOptions } from '../utils/options'
+import Overlay from '../components/Overlay'
 
 class Index extends React.Component {
   state = {
@@ -36,6 +37,7 @@ class Index extends React.Component {
           <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet" />
           <link rel="stylesheet" href="https://unpkg.com/react-tabs/style/react-tabs.css" />
         </Head>
+        <Overlay />
         <div className="app-container">
           <div className="column">
             <h1>Build Yo Self</h1>
